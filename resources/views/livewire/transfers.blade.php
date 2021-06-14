@@ -53,7 +53,7 @@
                                 @forelse($transfer->files as $file)
                                     - <a href="{{ route('show', ['transfer_id' => $transfer->id, 'file_id' => $file->id]) }}" target="_blank">
                                         {{ $file->path }}
-                                    </a>
+                                    </a><br>
                                 @empty
                                 @endforelse
                             </p>
